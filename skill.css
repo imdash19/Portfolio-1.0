@@ -1,0 +1,67 @@
+
+* {
+padding: 0;
+margin: 0;
+font-weight: 800;
+font-family: 'IBM Plex Sans', sans-serif;
+}
+.wrapper-center {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+.progress-bar {
+/* background: #000; */
+width: 121px;
+height: 121px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 10px; 
+position: relative;
+left: 40px;
+}
+.progress-bar:before {
+content: "";
+position: absolute;
+right: 0;
+width: 50%;
+height: 100%;
+/* background: #444; */
+z-index: 0;
+}
+/*===== The CSS =====*/
+.progress{
+width: 200px;
+height: 280px;
+z-index: 1;
+}
+.progress .track, .progress .fill{
+fill: rgba(0, 0, 0, 0);
+stroke-width: 3;
+transform: rotate(90deg)translate(0px, -80px);
+}
+.progress .track{
+stroke: #20313e;
+}
+.progress .fill {
+stroke: #fff;
+stroke-dasharray: 219.99078369140625;
+stroke-dashoffset: -219.99078369140625;
+transition: stroke-dashoffset 1s;
+}
+.progress .value {
+fill: #008eff;
+text-anchor: middle;
+}
+.progress .text {
+font-size: 12px;
+fill: #fff;
+text-anchor: middle;
+}
+
+.classn{
+    position: relative; 
+    left: -61px;
+}
